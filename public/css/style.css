@@ -1,0 +1,66 @@
+html,
+body {
+  height: 100%;
+  background-color: #efefef;
+}
+
+body {
+  padding-top: 80px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+.panel-body .glyphicon {
+  font-size: 5em;
+  color: #777;
+}
+
+.panel-body h2 {
+  margin-top: 15px;
+  color: #555;
+}
+
+.panel-body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#upload-input {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .my-container {
+    width: 450px;
+  }
+}
+.my-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.my-col, .panel-body{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 5px #ccc;
+}
+
+.my-col > *, .panel-body > *{
+  margin: 10px;
+  width: 100%;
+}
+
+.progress{
+  border: 1px solid #999;
+}

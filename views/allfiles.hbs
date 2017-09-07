@@ -1,0 +1,28 @@
+<div class="container">
+  {{#each files}}
+    <div class="col-md-6" style="padding: 5px;">
+      <div class="my-col">
+        <h2>{{ this.name }}
+          {{#if this.author}}
+            <small>Author: {{ this.author }}</small>
+          {{/if}}
+        </h2>
+        {{#if this.size}}
+          <small>Size: {{ this.size }}</small>
+        {{/if}}
+        <video controls onclick="toggel(this)" width="100%">
+          <source src={{ this.download }} type={{ this.type }}>
+          Your browser does not support HTML5 video.
+        </video>
+        <a href={{ this.download }} class="btn btn-primary">Dowload</a>
+      </div>
+    </div>
+  {{/each}}
+</div>
+<script>
+  const toggel = (that) => {
+    console.log(that.paused)
+    if(that.paused) that.play()
+    else that.pause()
+  }
+</script>

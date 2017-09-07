@@ -1,0 +1,36 @@
+<div class="container my-container">
+  <div class="row">
+    <div class="col-xs-12">
+      <div>
+        <div class="panel-body" id="upload-box">
+          <span class="glyphicon glyphicon-cloud-upload"></span>
+          <h2>File Uploader</h2>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar"></div>
+          </div>
+          <input class="form-control author" type="text" placeholder="Author"/>
+          <button class="btn btn-primary upload-btn" type="button">Upload File</button>
+          <div id="myModal" class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+            <div class="modal-dialog modal-sm" role="document">
+              <div class="modal-content">
+                <div style="color: white; background-color: crimson" class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="exampleModalLabel">Alert</h4>
+                </div>
+                <div class="modal-body">
+                  <h2>Author is required</h2>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<input id="upload-input" type="file" accept="video/mp4, video/ogg" name="uploads[]" multiple="multiple"></br>
+<script src="/javascripts/upload.js"></script>
